@@ -1,24 +1,7 @@
-# README
+ens # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### if you want to run the project in your local, you must use this instruction:
 
-Things you may want to cover:
+#### make a copy from `database.sample.yml` and `storage.sample.yml` then remove `sample` from new files. make changes to your files. Install gems with `bundle install`, then run ` rails credentials:edit` to generate you rails secret keys. Create and migrate the database with `rake db:create` and `rake db:migrate`.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The project is ready. You can use: `rails s`.
