@@ -11,11 +11,11 @@ module ErrorHandlers::BadRequestError
       end
 
       def invalid_url
-        render json: { detail: 'URL is not valid.' }, status: 400
+        render json: { detail: I18n.t('errors.invalid_url') }, status: 400
       end
 
       def url_is_not_reachable
-        render json: { detail: "we can't have access to URL, please check it again." }, status: 400
+        render json: { detail: I18n.t('errors.wrong_url') }, status: 400
       end
     end
   end

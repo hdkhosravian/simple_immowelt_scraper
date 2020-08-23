@@ -31,11 +31,11 @@ class DataCollector
   end
 
   def get_purchase_price
-    doc.search('app-price')&.first&.content&.gsub('.', '').to_i
+    doc.search('.hardfacts .hardfact strong').children[0].content&.gsub('.', '').to_i
   end
 
   def get_living_space
-    doc.search('app-hardfacts/div[1]/span')&.first&.content&.gsub(',', '.').to_f
+    doc.search('.hardfacts .hardfact')[1].children[0].content.gsub(',', '.').to_f
   end
 
   def get_number_of_rooms
@@ -62,33 +62,33 @@ class DataCollector
   def get_documents
     documents = []
 
-    doc.search('app-documents').children.each do |child| 
-      child.search('a').each do |document|
-        documents << document['href']
-      end
+    doc.search('a.icon-pdf').each do |doc| 
+      next unless is_valid_url?(doc['href'])
+      documents << doc['href']
     end
 
     documents.uniq
   end
 
   def get_images
-    images = []
+    images_data = JSON.parse(
+      doc.search('script').children[8].content.match( /{.+}/ )[0]
+    )
 
-    doc.search('app-images').children.each do |child| 
-      child.search('img').each do |image|
-        next unless image['src'].include? '/0x480'
-
-        images << {
-          title: image['alt'],
-          url: image['src']
-        } 
-      end
+    images_data["imageData"].map do |image|
+      {
+        title: image['srcImageStage'],
+        url: image['caption']
+      } 
     end
-
-    images.uniq {|i| i[:url] }
   end
 
   def location
     doc.search('.location')&.first&.content
   end
+
+  def is_valid_url?(url)
+    url =~ URI::regexp(%w(http https))
+  end
+  
 end

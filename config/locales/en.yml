@@ -31,3 +31,6 @@
 
 en:
   hello: "Hello world"
+  errors:
+    invalid_url: "URL is not valid"
+    wrong_url: "we can't have access to URL, please check it again."

@@ -1,0 +1,59 @@
+{
+  "title": "Wohnen im Altbau in Niederschönhausen",
+  "purchase_price": 298000,
+  "living_space": 75.98,
+  "number_of_rooms": 3,
+  "zip_code": "13156",
+  "city": "Berlin",
+  "street": "Blankenburger Str.",
+  "house_number": "6",
+  "documents": [
+      "https://media-docs.immowelt.org/B/F/F/C/doc_1F3EDEB8B60F4F288DA31CB42F11CFFB.pdf"
+  ],
+  "images": [
+      {
+          "title": "https://media-pics2.immowelt.org/A/E/1/6/600_B31F3B4437D94E499126BFF22EDB61EA.jpg",
+          "url": "Wohnzimmer"
+      },
+      {
+          "title": "https://media-pics2.immowelt.org/8/D/D/F/600_AC42845319E04B849312F7CE4E90FDD8.jpg",
+          "url": "Wohnzimmer"
+      },
+      {
+          "title": "https://media-pics2.immowelt.org/9/6/0/D/600_6729DCEF53D34DAA86E8D5D76E76D069.jpg",
+          "url": "Schlafzimmer"
+      },
+      {
+          "title": "https://media-pics2.immowelt.org/9/C/4/9/600_1F0F7FE2B04149E99A89BCDE7CB594C9.jpg",
+          "url": "Schlafzimmer"
+      },
+      {
+          "title": "https://media-pics1.immowelt.org/0/6/C/E/600_D82A321B02B44394918623C8D6D6EC60.jpg",
+          "url": "KÃ¼che"
+      },
+      {
+          "title": "https://media-pics1.immowelt.org/1/D/D/7/600_249D1A72CAF7402D8897B9EE84347DD1.jpg",
+          "url": "Badezimmer"
+      },
+      {
+          "title": "https://media-pics2.immowelt.org/A/E/D/4/600_0BBC13807BE0419793710A11A5F54DEA.jpg",
+          "url": "Hinterhof"
+      },
+      {
+          "title": "https://media-pics2.immowelt.org/B/F/1/1/600_D40ECED515DC4444BFEA0F75494111FB.jpg",
+          "url": "Hinterhof"
+      },
+      {
+          "title": "https://media-pics1.immowelt.org/2/1/9/5/600_0B62E3A103724A7C92B84AF6E1325912.jpg",
+          "url": "Hofansicht"
+      },
+      {
+          "title": "https://media-pics1.immowelt.org/2/F/6/8/600_2F5D06717BF346EAA7BDE239F86D86F2.jpg",
+          "url": "StraÃenansicht"
+      },
+      {
+          "title": "https://media-pics2.immowelt.org/A/3/0/0/600_3630379DC29444B88911B6D8DC32003A.jpg",
+          "url": "Grundriss WE07"
+      }
+  ]
+}
